@@ -1,0 +1,144 @@
+Abstraction:-
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> names = new ArrayList<>();
+
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+
+        System.out.println("Names: " + names);
+
+        names.remove(1);
+
+        System.out.println("Names after removal: " + names);
+
+        String firstElement = names.get(0);
+        System.out.println("First element: " + firstElement);
+    }
+}
+
+It is part of the Java Collections Framework and provides an abstraction for representing a sequence of elements. 
+The List interface defines common methods for working with lists, such as adding, removing, and accessing elements.
+
+In this example, we use the List interface to create an ArrayList object, which implements the List interface.
+ We add elements to the list, remove an element, and retrieve the first element using methods defined
+ in the List interface (add(), remove(), get()).
+ 
+ 
+Encapsulation:-
+An example of encapsulation from the Java library is the java.util.Date class.
+It represents a specific instant in time and provides methods for working with dates and times.
+
+import java.util.Date;
+
+public class Main {
+    public static void main(String[] args) {
+        Date currentDate = new Date();  // Current date and time
+
+        // Get and set various components of the date
+        int year = currentDate.getYear() + 1900;
+        int month = currentDate.getMonth() + 1;
+        int day = currentDate.getDate();
+        int hour = currentDate.getHours();
+        int minute = currentDate.getMinutes();
+        int second = currentDate.getSeconds();
+
+        System.out.println("Current date and time: " + currentDate);
+        System.out.println("Year: " + year);
+        System.out.println("Month: " + month);
+        System.out.println("Day: " + day);
+        System.out.println("Hour: " + hour);
+        System.out.println("Minute: " + minute);
+        System.out.println("Second: " + second);
+    }
+}
+
+In this example, we create a Date object representing the current date and time.
+ The Date class encapsulates the internal representation of the date and provides methods like
+ getYear(), getMonth(), getDate(), getHours(), getMinutes(), and getSeconds() to retrieve the individual components of the date and time.
+ These methods encapsulate the internal details of the date representation, such as how the date is stored and calculated.
+ 
+ 
+Inheritance:-
+public class Main {
+    public static void main(String[] args) {
+        try {
+            divide(10, 0);
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException: " + e.getMessage());
+        } catch (RuntimeException e) {
+            System.out.println("RuntimeException: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Exception: " + e.getMessage());
+        }
+    }
+
+    public static void divide(int dividend, int divisor) {
+        if (divisor == 0) {
+            throw new ArithmeticException("Cannot divide by zero.");
+        }
+
+        int result = dividend / divisor;
+        System.out.println("Result: " + result);
+    }
+}
+If an ArithmeticException occurs, the corresponding catch block will be executed and display the specific error message.
+ If a different RuntimeException occurs, the catch block for RuntimeException will handle it.
+ If any other exception not caught by previous catch blocks is thrown, the catch block for Exception will handle it.
+
+This example demonstrates the inheritance hierarchy of exceptions.
+ ArithmeticException and RuntimeException are subclasses of Exception. 
+ By catching exceptions in a hierarchical order, we can handle specific exceptions separately,
+ providing more specific error handling or logging based on the exception type.
+ 
+ 
+Polymorphism:-
+Method Overriding:
+Polymorphism is commonly used in method overriding, where a subclass provides its
+ own implementation of a method inherited from its superclass.
+ This allows the same method name to exhibit different behaviors based on the actual object type.
+ One such example is the toString() method, which is overridden in many classes throughout the Java library,
+ such as String, Integer, ArrayList, etc. Each class provides its own implementation
+ of the toString() method to return a string representation of the object.
+ 
+ In String Class:
+ String str = "Hello, World!";
+System.out.println(str.toString()); // The toString() method is implicitly called
+
+In a custom class:--> implementation of tostring
+
+class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", age=" + age + "]";
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person("John Doe", 30);
+        System.out.println(person.toString());
+		System.out.println(person);
+    }
+}
+
+
+
+Method Overloading:--
+These 3 are methods from string class which shows method overloading by having different input parameters.
+int lastIndexOf(int ch): Returns the index of the last occurrence of the specified character.
+int lastIndexOf(int ch, int fromIndex): Returns the index of the last occurrence of the specified character, searching backward from the specified index.
+int lastIndexOf(String str): Returns the index of the last occurrence of the specified substring.

@@ -1,0 +1,31 @@
+1. to find the version of newman tool 
+
+===>>> newman -v
+
+2. To find the version of nodejs 
+
+====>>> node -v
+
+3. To run a collection using newman with environment variable & global variable
+
+====>>>  newman run pathofcollection -epathofenvironmentvariable -gpathofglobalvariable
+
+4. To run a collection using newman 
+
+====>>>  newman run pathofcollection
+
+5. To generate report using newman in htmlextra format
+
+====>>>newman run path of collection -r htmlextra
+
+6. 5. To generate report using newman in html format
+
+====>>>newman run pathofcollection -rhtml
+
+7. To install newman reporter 
+
+====>>>npm install newman-reporter-html
+
+8. To install newman tool
+
+====>>> npm install newman or npm install -g newman 

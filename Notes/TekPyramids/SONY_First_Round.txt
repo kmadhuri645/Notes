@@ -1,0 +1,23 @@
+1) Introduction
+2) Explain the Components of HTTP Request.
+3) What are the different methods are used to send HTTP Request?
+4) What is the difference between PUT and PATCH method?
+5) How will you ensure that your request is valid?
+6) Asked to write api test case for reqres add new user endpoint.
+7) What is the difference between authentication and authorization?
+8) Explain the difference between OAuth 1.0 and OAuth 2.0.
+9) How to generate token in OAuth 2.0 using ClientID and client secret code?
+10) How you will secure the token so that other users can not access it directly.
+11) If you are using bearer token authentication problem will be solved but how will you do authorization?
+12) How you will validate the URL?
+13) Asked to write api test case for create user? (I wrote the test case but he was expecting test case from system testing perspective)
+14) Asked to write validation in POSTMAN tool for status code and user value check
+15) What is the difference between Explicit wait and Fluent wait
+16) What is StailElementReference Exception? How to avoid this exception?
+17) Given one scenario to click on button then child window will be opened go to that window get the title and close that window shift the control to parent window.
+18) Asked to write a search a value in dropdown by using Select class.
+19) Explain collection framework classes and interfaces.
+20) I have some environment variables in postman how will you share those variables with your teammates without including some information like username and password and token?
+21) What are agile characteristics?
+22) What is Epic and what content is present inside the epic?
+23) How to handle alert pop-up?

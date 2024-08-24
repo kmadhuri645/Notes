@@ -1,0 +1,20 @@
+{
+"teamSize" :10,
+"teamMember":["Jhon","ram","sita"],
+"projectManager":{
+            "name":"sagar",
+			"empID":"tp01"
+			}
+}
+
+"category":{
+               "id" :0,
+			   "name" :"String"
+          }
+		  "name" :"doggie",
+		  "tag" :[
+		           {
+				   "id" :0,
+				   "name":"string"
+				   }
+				   ]

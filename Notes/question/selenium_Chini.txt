@@ -1,0 +1,370 @@
+1.Difference between Implicit Wait vs Explicit Wait.
+
+Implicit Wait:
+
+Implicit wait is applied to the findElement or findElements methods.
+If the condition is not satisfied, it will eventually throw a "No Such Element" exception.
+It applies to all elements in the script.
+It is generally slower compared to explicit wait, as it is applied globally.
+no need to create object
+
+Explicit Wait:
+
+Explicit wait is used to wait for a specific condition to be true.
+If the condition is not satisfied within the timeout period, it throws a "Timeout" exception.
+You write explicit wait for each element separately.
+It is generally faster than implicit wait because it is applied only to the specific elements you target.
+object creation
+
+2.Explain abstraction?
+abstraction in a one of the pillers of the opps.
+abstraction is nothing but it hiding the implementation and show the functionality of the aplications is called as abstraction.
+we cant create object of abstration
+we can create consturucter.
+
+3.Difference between collections and collection?
+collections--it is a class,
+it has concreate method
+ collections methods are concreate and static in nature
+2.Collections does not have any subinterface.
+3.iteratable interface is super interface for collection.
+it is final class .
+
+
+collection---it is an interface,
+collection  and non static abstract method.
+object class is parent class of collection
+collection depends on 3 subinterface list queue and set
+it is implemented by other class
+//conction is a group of object .collection provide method to perform curd operation on the 
+
+4. How do you handle dropdown?
+by using select class we can handle the dropdwon.
+
+============================================================================================
+1. How do you validate your response in API?
+here we can verify the response in different way -by using assert method as well as jsonpath and 
+xpath.for example if i want to 
+verify response header----/by status code/statuscode/status line/content type/header.
+verify response time,by using matchers class
+verify respone body --by using json path.and json x-path.
+
+2. Why are you using interface for storing paths and credentials in your framework?
+To store the constant path.bcz it is by default static in nature.
+
+3. Have you used fluent wait? WAJP to use fluent wait in a program?
+To avoid synchronisation issue .
+HERE we can change polling frequency
+we can handle exception.
+
+4. What will happen when you give priority =-1,-2 in TestNG
+first --2 will be execute first than -1 will get execute
+
+5. when do you get NoSuchElementException?
+when  element is not visible in web page we get this exception.
+ui changes
+page loading
+locator is wrongs.
+
+6. Why are you using implicit wait as precondition?
+To intract with the web element will provider iw bcz once the app is lauch its take the time 
+to load the element on that web page. 
+To avoid NoSuchElementException
+it is a global wait.
+
+===========================333============================
+7.can you we add the partials data by using put methods.
+ya we can add but we have to provide full body and in body whatever we want to change just change
+the 
+
+9.learn about----priority----character is possible---0
+in invocation count can we use charchters---1
+ThreadPollSize.---it is attributes.---1
+
+10.Advantage of lamda expression
+
+1.We can provide multiple implementation using multiple lamda expression
+2.we need to write implementing class.
+3.we need to write method declaration
+4.we can pass method implementation as an input to another method
+
+
+Q.Double Area(double radius); Circle--lamda
+
+Q.Double add(int b);   Rectangle----lamda
+
+11 Collections Framework;
+it is group of classes and interface which provides options to store multiple 
+
+12.maven life cycle
+mvnclean ,mvnValidate, mvnCompile, mvnTest
+
+
+===========================================================================JAVA================================================
+Throw Throwable Throws
+================================================API=============================================================================
+1.WHAT ALL CHALLENGES ARE INCLUDED UNDER API Testing
+
+1.Api documentation---to test api we need endpoints/resources/parameters/payload
+2.Access to DB===This happens when api are from third party company where their database details are not shared
+3.Authorization Over head======
+
+2. WHAT IS DIFFERENCE B/W PUT AND POST METHODS?
+
+POST request-- creating a new object on the server
+PUT request ,Update the object in server with new value.
+
+3.WHAT ARE COMMONLY USED HTTP METHODS??
+GET:it enables you to retrive data from a server
+POST: it enables you to add Data to an existing file or resource in server
+PUT: It lets you replace an existing file or resource in a server.
+DELETE: it lets you delete data from a server.
+
+4.LISTOUT FEW AUTHENTICATION TECHNOQUES USED IN API'S??
+1.Session/Cookies Based Authentication
+2.Basic Authentication---usename&password send
+3.Digest Authentication
+4.OAuth
+
+5.WHY API TESTING IS DETERMINED AS THE MOST SUITABLE FROM FOR AUTOMATION TESTING.
+==BCZ it is a lighter wait testing and its more stable than UI testing(UI testing is more flicky bcz internet is not proper
+or maybe browser do not support latested version of selenium so test might break in middle).but in api no changes to break it
+bcz it not depends upon any external resources.like loading the page etc...
+
+6.WHAT IS REST Api
+REST stands for Representation State Transfer. it is a set of functions/api helping developers in performing request and 
+receive responses.Interaction is made through HTTP Protocal in Rest Api.
+
+7.WHAT EXACTLY NEEDS TO VERIFY IN API TESTING.
+==In API testing we we send a request to API with the known data and then analysis the response.
+1. we will verify the accuracy of the data.
+2. will see the HTTP status code.
+3.we will see the response time.
+4.Error codes in case API returns any errors.
+5.Authorization would be check.
+6.Non-Functional testing such as performance testing, secutity testing.
+
+8.WHAT ARE PATH PARAMETERS AND QUERY PARAMETERS FOR BELOW Api
+http:/rahulshetttyaacademy.com/orders/112234?location=IND
+
+path parameters is identify with slace in the url.here two parameters is there one is 112234 2is location=ind
+if parameters prefix with slash that is path parameters.
+and whenever we have ? before parameters is call queryparameters.
+
+9.WHAT ARE THE CODE COMPONENTS OF AN HTTP REQUEST?
+1.HTTP Request methods like: PUT ,POST,DELETE.
+2.Base Uniform Resource Identifier(URI)
+3.Resources and PARAMETERS.
+4.Request Header, which carries metadata(as key-value pairs) for the HTTP Request message.
+5.Request Body , which indicates the message content or resource representation.
+
+10.WHAT COULD BE THE HTTP METHOD FOR BELOW API SCENARIOS? ANSWER IF IT IS GET OR POST.
+
+SCENARIOS-An api which has Endpoint,parameters,headers,cookies and payload---POST. (BCZ OF PAYLOAD)
+
+11.WHAT ARE THE DIFFERENCE B/W API TESTING AND UI Testing.
+UI(User Interface) testing means ,the testing of graphical user interface.The focus of ui testing is on the look and
+feel of application.In user interface testing the main focus is on how users can interact with app elements such as images,
+fonts,layout etc. are checked.
+
+API testing allows the communication b/w two s/w system.Api testing works on backend also known as backend testing.
+api communicating b/w differnt server through all the https request.so there is no frontend here.all the requst send through
+the protocol if we deal with rest than http protocol.if rest soap protocol.
+
+12.WHAT PROTOCOL IS USED BY THE RESTFUL WEB SERVICES?
+RESTFUL Webservices uses the HTTP protocol.They use the HTTP protocol as a medium of communication b/w the client and server.
+
+13.WHAT ARE SOAP Webservices?
+SOAP stands for simple ojbect access protocol .it is an XML based messaging protocol. it helps in exchanging infomation among
+computors.
+
+14.HOW DO WE REPRESENT A RESOURCES IN REST ?.
+==Using HTTP METHODS.
+
+15.CAN YOU USE GET Request INSTEAD OF PUT TO CREATE A RESOURCES?
+==No GET request only allows read only rights. it enables you to retrive data from a server but not created a resource.
+PUT or POST methods should be used to create a resource.
+
+POST should be used when the client sends the pages to server and then the server lets the client know where it put it.
+PUT should be used when the client specifies the location of the page.
+
+16.CAN YOU USE POST REQUEST INSTED OF PUT TO CREATE A Resource?
+==YES WE CAN .BCZ POST IS SUPER SET OF ALL OTHER HTTP METHODS EXCEPT GET.
+
+17. WHAT DO YOU UNDERSTAND BY PAYLOAD IN RESTFUL WEB SERVICE?
+==Payload/body is the secured input data which is sent to API to process the request.
+Payload is generally represented in Json format in Rest Api's.
+
+18.HOW DO WE DIFFERENTIATE PATH AND QUERY PARAMETERS IN API REQUEST Endpoint.
+Generally queryparameters constructed end of the url..
+if it is / than path ...if it is ? mark than it is query parameters.
+
+19.WHAT IS RESTASSURED.
+it is java library which can automate Rest Api's.
+
+20.HOW WOULD WE DEFINE API DETAILS IN REST ASSURED AUTOMATION??
+==We shall define all the request details and send it to server in given(),when(),then() methods.
+
+21.WHAT IS JSON SERIALIZATION AND DESERIALIZATION IN RESTASSURED?
+==SERIALIZATION in RestAssured context is a process of converting a java object into Request body(Payload).
+RestAssured also Supports deserialization by converting Response body back to java object.
+
+22.LISTOUT FEW COMMON JSON PARSING TECHNOQUES USED IN RestAssured AUTOMATION?
+JSON PATH
+Deserialization of json using POJO Classes.,gson Library
+
+23.How would you send attachments to API USING REST ASSURED TEST?
+
+==using multipart methods.
+
+24.DIFFERENCE STATUS CODES AND THEIR DESCRIPTIONS
+200-OK== the request was successfully completed.
+201-Created=== the request was successfully completed.
+400-Bad Request==The request was invalid.
+401-Unauthorized===The request did not include an authentication token or the authentication token was expired.
+403-Forbidden==The client did not have permission to access the requested resources.
+404-Not Found--The requested resource was not found.
+405-Method not allowed--The Http method in the request was not supported by the resource.For example the delete method can not use post
+409-Conflict===The request could not be completed due to a conflict.for example post contentStore Folder Api cannot complete if the api in parent location.
+
+500-Internal Server Error===The request was not completed due to an internal error on the server side.
+503-Service Unavaliable==The server was unaavailable.
+
+25..JSON PATH
+"course":
+
+
+1.How many way we can send the data in postman.
+2.Scope of variables
+
+
+
+
+=========================================================MANUAL==================================================
+1.Difference b/w sprint /Release
+
+2.What is testDesignTechnique.
+=Error guessing /equivalentPartaing/BoundryValueAnalysis
+
+3.what is difference b/w Exploratortory testing and Adhoc Testing
+==ex-Testing=====no requirement
+===Adhoc Testing============Requriment is there but we are doing -ve Testing.
+=====================================================================================================================
+1. have you worked on jenkins
+2. how do we configure a  job in jenkins=======prequesite
+===
+3.how after/which time you execute jobs in jenkins.
+4.how do create a job in jenkins.
+5.how you configure pipe line in jenkins.
+6.how do you parametrized in jenkins.
+7.assume that you are executing multiple  job in jenkins.one of the job is getting fail.whats your next step to do.
+8.assume that one of your job is schedule as 12,0 clock and you are executing another job at the same time by scheduling
+on demand which job will get execute. 
+
+9.how do you parametrized in jenkins.
+10.what is useses of jenkins.
+11.i want to run my job on every monday and friday in evning  5 oclock.how do you schedule.
+12.what are the plugin which you are intergrated in jenkins.
+13.how do you configure jenkins so you are getting report in mail.
+
+=========================================================MANUAL=====================================================
+1.INTRODUCTION.
+
+2.ROLES AND RESPONSIBILIIES OF RECENT PROJECT(Web Application, API automation)
+
+3.FRAMEWORK EXPLANATION?
+
+4.PROJECT explanation
+===project name
+client of the project
+url
+process which you followed in the project
+domain of the project
+team size of that particular project
+duration of the project
+one end to end business flow of the project.
+modules which you worked in
+total number of testcases you automated this project.
+total number of sprint you have in this project.
+one high proirity and low severity bug.
+one high severity and low priority bug.
+total modules of the application
+whats the main useses of the application
+application stack.
+numbers of builds.
+last sprint number
+recent release version of the number.
+what is your production url.--B2B---B2C
+
+5.CHALLENGES /issue faced in your recent project.
+
+6.CONTRIBUTION TO FRAMEWORK/PROJECT.
+Contribution on F/W---total no of tc we 700 executed individually.
+=========================================================================
+7.EXPLAIN AGILE ALONG WITH MEETINGS,SPRINT DURATION,RELEASE DURATION,
+
+8.Total number of testcases in your project and how many testcases u automated.
+30-40 tc automated per months.
+
+9.tools and technology used in your sprint.
+
+9.WHAT IS YOUR ACTIVITY AND RESPONSIBILITY IN YOUR SPRINT.
+
+10.WHEN DID YOU JOIN LAST COMPANEY.
+
+11.can you tel me the address of last companany.
+
+12.Release process.
+
+14.WHY DID YOU JOIN TESTYANTRA
+
+15.SEEMS YOU JOINED TESTYANTRA TWO MONTHS BACK THEN WHY YOU ARE SWITCHING AGAIN
+ i am not switching just we was working for contract emplyoee for you
+ 
+16.CAN YOU TEEL ME THE URL OF LAST COMPANEY PROJECT.
+
+17.R U FROM QSPIDER
+
+18.DO YOU REALLY HAVE EXPERIENCE
+sorry come again...IF NOT WHY SHOULD SIT HERE.
+
+19.WHAT THE NOTICE PERIOD OF YOUR COMPANEY.
+NO I AM ON BENTCH
+
+20.R U READY TO JOIN IMMEDIATELY.
+YES I AM IMMEDIATELY  BCZ I AM ON BENTCH.
+
+21.WHAT IS YOUR CURRENT CTC.
+AS PER COMPANEY POLICY I COULD NOT DISCLOUSE.
+
+22.WHAT IS YOUR CAPACITY.
+
+23.HOW DO YOU START YOUR DAY.
+day to day activity.
+
+
+24.WHAT YOU DO APART FROM WRITING SCRIPT.
+day to day activity.
+
+25.HOW MANY TC YOU ARE ABLE TO AUTOMATE PER DAY.
+
+26.HOW MANY TC YOU ARE ABLE TO AUTOMATE in YOUR PROJECT.
+
+27.ARE YOU GETTING PAY IN TESTYANTRA.
+NO.
+
+28.DO YOU HAVE ANY QUESTION.
+WHICH DOMAIN YOU ARE WORKING
+WHAT
+
+
+29=CC=will naver know BCC
+BCC=CAN SEE CC---BLIND CARBON COPY.
+
+LAYAER--2
+1.WRITE A METHOD FOR TAKING SCREENSHOT
+2.XPATH FOR FLIPKART APP
+
+
+
+

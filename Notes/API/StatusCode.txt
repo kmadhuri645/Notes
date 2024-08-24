@@ -1,0 +1,25 @@
+404 Not found - The protocol and the end point was missing
+415 Unsupported media type - The body was missing for POST method
+405 Method Not Allowed -End pont(API)not matching with the HTTP method/put-get
+401 UNauthorized - No permission to perform the action
+422-Unprocessable Entity -Unable to process due to duplicate data
+400-Bad Request -Syntactical mistake
+
+
+
+
+
+
+
+
+
+Login
+view products-productID
+wishlist-CRD
+cart-CURD
+address
+order
+review
+
+
+

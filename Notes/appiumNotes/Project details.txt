@@ -1,0 +1,26 @@
+Project Details: (I have showed 20 months in current project)
+* Team Size: 8 (1- team lead, 1- scrum master, 3 - Automation test engineer, 3 - manual test engineer)
+* Total Release: 12
+* Sprint Duration: 2 months
+* Release Duration: 1 Release = 2 sprints
+* Planned Builds / Sprint: 3 (every 2nd, 3rd, 4th week of sprint)
+* Total number of builds/Sprint: 8-9 (planned and unplanned)
+* Total builds you have tested: 70 - 72
+* Testcases / day: 6 - 9
+* Total testcases: 2500+
+* Total test cases Automated: around 2200
+* Test scripts in smoke test suite: 120 - 130
+* Total scripts in regression suite: around 2000
+* Total bugs in project: 465 - 470
+* Bugs found in Automation: 85 - 90
+* Bugs found by me: 40 - 45
+	- Blocker: -
+	- Critical: 6
+	- Major: 16
+	- Minor: 20
+* Bugs found in Manual: 370 - 380
+* Bugs found by me: 140-145
+	- Blocker: 14
+	- Critical: 34
+	- Major: 41 
+	- Minor: 52

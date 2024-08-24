@@ -1,0 +1,114 @@
+request channing-->capturing the data from one request by writting json xpath and
+giving that to other response
+
+send request-->it is used to send req within another req
+send request by default supports only get http method
+
+
+
+=========================================================================================================
+avoid hard coding & also reusebility
+ data driven testing-->to avoid hard coding
+
+=============================================================================================================
+we can create 3 types of varible
+
+1) local varible-->it scope is within the request 
+ex->var locdata;
+
+2)environment varible-->it's scope is within the collection.
+ex->click on eye symbol->in environment 
+click on add/edit->then create the environment varible
+ex-->
+variable name         currentvalue
+ baseuri               https://petstore.swagger.io/v2
+
+3)globle varible-->scope of var can be any where.
+ex-->use snippet-->set globle varble
+pm.globals.set("variable_key", id);
+===================================================================
+Snippet used to set the global variable.
+=========================================================================================================================
+
+pm.test("Your test name", function () {
+    var jsonData = pm.response.json();
+    var id=(jsonData.id);
+
+    pm.globals.set("variable_key", id);
+
+});
+To read environment & global variables-->
+{{}}-->use them are call them within double curly braces
+
+
+======================================================================================================================
+Request Chainning
+=====================================================================================================================
+
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);=================>snippet:status code is 200
+});
+pm.test("Status code name has string", function () {
+    pm.response.to.have.status("OK");=====================>snippet:status code has a string
+});
+pm.test("Response time is less than 200ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(1000);=================>snippet:response time is less than (200)value can be changed.
+});
+pm.test("Body matches string", function () {
+    pm.expect(pm.response.text()).to.include("string");===========>snippet:contains string(hardcode the value of string)
+});
+pm.test("Your test name", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.category.id).to.eql(0);==========>snippet:json value check
+});
+pm.test("Your test name", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.category.name).to.eql("string");
+});
+
+======================================================================================================================
+authentication-->who ru ?
+authrezation-->on what we have access
+
+type of authentication
+1)basic auth-->username & password
+2)barrer token-->token(single time token)--imp
+3)oauth 1.0-->
+4)oauth 2.0-->(advance one of oauth 1.0)-->client id ,client secret-->token(otp)-->imp
+every time for every req it generates new token by using the client id & secret
+=============================================================================================================================
+
+git hub-->centralied repository
+
+base uri-->https://api.github.com
+post-->create a repository
+end point-->/user/repos
+
+ex->json object to create repository
+{
+"name":"divay",
+"description":"repo",
+"private":true
+}
+================================================================================================================================
+step to generate Bearer token==>
+
+profile image icon-->settings->developer setting-->pernal access token..>click on generate new token
+select scop->repo,delet repo-> cilck on genetre token
+
+====================================================================================================================================== 
+step to generate client id and client seceret==>
+
+profile image icon-->settings->developer setting-->oauth app--->register new oauth app ->clientId will generate by default
+ to get client seceret->click on new client seceret
+
+call back,auth url,access token url,client id ,client sceret ,scope are mandatory fields
+and also access token->to get token --> click on generte new token 
+it will  new generate token ,that token will taken to access token field by itself/default.
+ scop->repo for repository ,
+        delet repo->for delete repository
+
+endpoint for delete
+delete-->/repos/{owner}/{repo}
+
+==================================================================================================================================================

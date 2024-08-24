@@ -1,0 +1,100 @@
+====================================
+MANUAL TESTING INTERVIEW QUESTIONS
+====================================
+
+
+Tell me about your recent project
+How you get builds and how you check whether they are automable or not
+Negative testcases on his own explained project 
+defects in your project
+Sanity testing
+Regression testing 
+Functional And Non-functional Testing
+Defect bug and error diff
+Severity and priority 
+In which environment are worked 
+what is testing environment
+Software Testing Life cycle(STLC) and (SDLC).
+smoke testing
+Open Google search Engine and write Test Scenarios
+How many modules you had worked and what are those modules? ✔
+What kind of testing's you performed in your project ✔
+what is smoke testing, sanity testing and differences
+what is system testing, Integration Testing ✔
+Open Gmail registration page and derive the Test Scenarios *********
+Sanity Testcases on YouTube application********
+Explain your daily routine and which process you followed. ✔
+If you are finding defect in production which is missed by you how you react ✔
+What is your time constraint. ✔
+how you write Testcase can you explain the procedure of Testcase template and tell me one test case in your project. ✔
+can you tell one critical feature in project and what type testing you have done that feature? *******
+can you write scenarios for your critical feature in your application. *********
+Can you tell one challenge you faced in your privous project. ✔
+Have you face any customer escalation in your project? ✔
+What is the contribution in previous what you have done? ✔
+When you found critical bug how you handle that what bases you consider it as critical? ✔
+Test case template ✔
+He asked me to write scenarios for ecommerce application we want to buy the product through credit card debit card phone pay google pay and paytm write integration scenario and what are all prerequest needed *********
+You have two dropdowns, country dropdown and state dropdown, Select a country from country dropdown, then select the state of respective country. Write scenario for this *********
+Difference between active bug, inwork bug and verifying bug ✔
+How do you  write Test cases ✔ 
+Explain Defect life cycle ✔
+What is deferred defect ✔
+Do you know About boards in Jira
+Agile ceremonies
+roles and responsibility
+What is you notice period? ✔
+Compatibility testing
+Test plan
+What is Spike? ✔ *****
+if u found a bug and developer is outrightly rejecting it ,what is ur approach
+Where did you stored your test cases ✔
+Tell me one scenario of your application ✔
+Scenarios on Amazon like how will you do smoke and sanity testing in Amazon( take any feature from Amazon)
+What is DoD in agile
+In the registration page entering all the details when ur going to click the submit button but submit not working how you debug the issue
+TestCase Design Technique
+What is the differnce between verification and validation?
+What are the STLC phases in your project?
+How make sure that all test cases are Tested *******
+if i given 30 Test case What is your rough estimation *******
+what is your activity and resposbility in Sprint *******
+Story point estimation *******
+Product version
+Explain the process of testing all the builds.
+If you have one day of time ,So in the product backlogs there are many user stories how you prioritise those stories to the sprint*******
+why u found regression defects in your project.*******
+How to review test scripts of others.
+how do you do regression and how often you do regression testing.*******
+how much time will be required for regression testing.
+Manual scenario based questions - in the login page  2 text field there username and the password how u write the scenarios ******
+In the registration page entering all the details when ur going to click the submit button but submit not working how you debug the issue *****
+If new feature given what is ur test approach ******
+What all the testing u will do for the login page ******
+what are all the testing you will perform if there is a new feature promocode is introduced in swiggy application ******
+In facebook live what are all the most critical scenario u will test ******
+what do you meant by stable testcases. ✔
+What are the envrionement are you worked on ✔
+what are the testing done in Producation environment ******
+can we perform automation in producation environment ******
+you have a login page with a submit button, but you are not able to click on the submit button what is the reason for that?(manually u can click on that)
+Your are working in amazon application, whats your approach if when some feature is not working in production environment. *******
+Test plan and Test Stratergy.
+Test coverage.
+Test metrics.
+In production environment, the application is not working in some browsers, what is your approach? *****
+Diff between adhoc and exploratory testing
+if any functional defect came in testscricpt what is your aproach to raise the defect. ✔
+What is a traceability matrix?
+how you are segrating the test case ? ******
+
+
+
+
+
+
+
+
+
+
+

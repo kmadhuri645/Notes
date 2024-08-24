@@ -1,0 +1,113 @@
+====================================
+JAVA TESTING INTERVIEW QUESTIONS
+====================================
+
+Where you have used collections in your framework ✔
+How do you synchronize an array List ✔
+difference between set and list ✔
+diff collection and collection's ✔
+Which one you prefer to go with ArrayList or Linklist and why✔
+Which one you prefer to go with Array or ArrayList, Why  ✔ 
+Diff b/w set and list✔
+Diff b/w hash table and hashmap ✔
+Using linkedlist detect listcycle(program)?❌
+How internally map the set? Why it will not accept duplicate values? ✔
+Difference between comparator and comparable. ✔
+
+Explain Exception handling with a program.
+custom exception
+Difference between string buffer and string builder 
+What is Final class 
+Exception handling and try catch finally
+diff finally finalize and final
+Diff b/w error and exception
+What is the use of throwable and io exception
+String buffer  vs string builder
+Explain threads concepts
+Questions on filehandling
+final finally finalize.
+Diff b/w checked and unchecked exception
+Throw throws difference
+
+
+
+Method overloading and overriding programs 
+What are access specifier, modifier, and return type
+Program on inheritance scenario take 1 parent class, 1 child class and 1 class for main method Create an object for both classes in main method and asked output order
+oops concept in project
+Can you make constructor as private ❌
+Can you able to create object for private constructor ❌
+polymorphism.
+What is Abstract class
+Contructor
+This keyword
+mention 5 basic standards to write good Java program.
+Oops concepts in your framework
+abstract class syntax 
+concept of upcasting and downcasting
+Difference b/w = and ==
+without main method can we execute  java program
+can we override private method? Why
+why we can't override static method ?
+Oops Concept explianation
+abstract class interface diff
+Diff b/w method overloading and overriding
+Difference b/w compile time and runtime  polymorphism
+write a simple program to implements all the opps concepts.
+Which java version you used? & What are the new things added in 17
+what is super keyword where you are going to use super keyword
+you are having individual classes called classA and classB having some functionalities , i want those functionalities in in classC, what is your approach
+if file is not found ,which exception
+What is constructor chaining?
+Can Interface have a constructor?
+Explain Access Modifiers?
+What is Binary search(with program).
+What is the time complexity for bubble sort?
+Which is the latest jdk version you have used?
+can we create an object of interface?
+Can u parameterize Constructor inside an abstract class ?
+Can u define variables inside abstract class Constructor construct?
+When u will get classnotfound exception?
+Why can't you achieve full abstraction using an abstract class
+what is singleton class
+Why you used getter and setters in selenium script
+CustomException
+Singleton
+concurrentHashmap
+Lambda expression
+
+Output
+try{
+}
+catch(Exception e){
+return 40;
+}
+finally{
+return 60;
+}
+
+Output - 
+try {
+int a = 40 / 0;
+} catch (Exception e) {
+return 40;
+}
+finally {
+return 60;
+}
+
+Write the logic for the palindrome in different approaches and less time complexity, and space complexity
+Employee emp1 = new Employee(“Ram”,10000, 101,23)
+Employee emp2 = new Employee(“Shyam”,20000, 102,34)
+Employee emp3 = new Employee(“Rahul”,30000, 103,43)
+Above are the details of employee, so how will you add the employee data with the help
+of HashMap where key is the employeeName . Write logic for it.
+
+
+
+
+
+
+Convert the String a = "12345"; into intConvert the String a = "12345"; into int
+
+

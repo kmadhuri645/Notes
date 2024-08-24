@@ -1,0 +1,109 @@
+====================================
+API INTERVIEW QUESTIONS
+====================================
+
+Framework both UI Automation and Rest Assured
+What tool u had used for API testing?
+Api questions on reqrus
+Crud operations
+Status code
+you're using facebook,  you have to  login first . which request are you going to use?
+Pojo Class
+Different ways to post
+How you used authentication in API
+What are codes in HTTP
+how do you validate the response 
+Have you worked on WebSocket? *********
+Tell me one negative scenario in your Api? *********
+Tell me the approach that to read the data from .csv(commama separated value) file and use it as test data using postman
+write the request body for your API
+write a JSON path to get particular value from response
+Tell the URI endpoints you worked on
+Draw the response body you get.
+One excel file is there you dont know how much data is there how could you check the data before sending it with rest assured.******
+How you are checking the particular json data and what scenarios you have design for it? How you are creating Testcases for it.******
+what are the negative scenarios you perfomed on crud operations in your API.*******
+how many API are exposed in your project.
+GET http://10.238.10.10:8089/candidates/v1/{id} Write a get request for Above link.
+400 bad request on what basis you will get
+Serialization and deserialization
+Postman scenario based questions -
+1)if there are multiple test in a single request If you want to pass the data from 1st test to 2nd test and How will you validate whether that data is present or not 
+2)If there are 100 test cases can you execute all at one shot
+write an example to post the request using restassured.
+In postman where do we use runner?
+Post the request and validate the status In http://reqrus******
+How to you validate the response of status using assertion
+how to u add authentication in Rest-assured
+about cookies
+How to hit the same api with multiple time*****
+How will you test api after UI is developed.
+3 apis are there 1 st api is working fine other 2 not working how u debug the api
+In api testing what u will verify and what are all the testing u will perform*******
+tell me the last Api you have tested.
+why gateway time out happens when your application is working fine. Give an example from your project.
+How do u confirm if it is a front end issue or backend issue.
+Different between cache and cookies
+What is static and dynamic api. Given a real time example
+Can u write a simple program for the basic oath?
+can u ues put method insted of post method
+Can u write a simple program for the basic oath?
+Which tool does u use for API testing?
+What is a query parameters?
+What is the path parameter when u use it and how u identify it?
+What is the difference between path and query parameters?
+You are having 4 apis, all are secured Apis, i want to get one particular book....what are all the apis you are going to authenticate and use. still UI is under development and in UI if you logged in successfuly it is going to hit 2nd api and you are going to get List of all books on UI.
+	firstApi-----> Login
+	SecondApi----> gives all books present in a store
+	thirdApi-----> gives particular book
+	fourthapi----> LogOut
+
+
+write a json path for id : {
+                         data{ 
+                         item[
+                              id="12"
+                             ]
+                           }
+                         }
+
+
+for the given body ,I want a response containing  both is in values ,how would you handle this response ?
+{
+    "success": true,
+    "statusCode": 200,
+    "message": "success",
+    "data": {
+        "ServerTime": 1706091548,
+        "mtf_pledged": [
+            
+        ],
+        "mtf_pending": [
+            
+        ],
+        "mtf_open_for_pledge": [
+            {
+                "isin": "INE039A01010",
+                "buy_qty": 1
+            },
+            {
+                "isin": "INE528G01035",
+                "buy_qty": 1
+            }
+        ]
+    }
+}
+
+
+
+
+
+
+5)if we type --> cd a/b/c/../d/   this in
+ your  command prompt what is ur output
+6) if we type --> cd a/b/c/../d/../   this in
+ your  command prompt what is ur output
+
+
+write the SQL query to get how many 'A+' blood group persons are there
+Difference between truncate and delete

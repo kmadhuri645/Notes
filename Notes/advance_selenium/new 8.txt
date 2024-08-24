@@ -1,0 +1,78 @@
+package HYBTotiural;
+
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class FlipkartParameters {
+	
+	WebDriver driver;
+	
+	@Parameters({"browserName","url"})	
+	@BeforeTest
+	public void AlunchBrowser(String browserName, String url) throws Throwable {
+		
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options=new ChromeOptions();
+		options.addArguments("disable-notifications");
+	    driver=new ChromeDriver(options);
+		driver.manage().window().maximize();
+		//driver.get("https://www.facebook.com/");
+		driver.get(url);
+		Thread.sleep(5000);
+	}
+	
+	@AfterTest
+	public void teardown() {
+		driver.quit();
+	}
+	
+	@Test
+	public void BenterDetails() {
+		
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("kmadhuri645@gmail.com");
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Qspiders@123");
+		driver.findElement(By.xpath("//button[@name='login']")).click();
+	}
+	@Test
+	public void CnavigateMYinfo() {
+		driver.findElement(By.linkText("Madhuri Verma")).click();
+	}
+	@Test
+	public void DverifyMyProfile() {
+		boolean actualValue = driver.findElement(By.linkText("Madhuri Verma")).isDisplayed();
+		System.out.println(actualValue);
+		//assertTrue(actualValue);
+	}
+	@Test
+	public void EverifyProfile() throws Throwable {
+		driver.findElement(By.xpath("(//div[@class='x1rg5ohu x1n2onr6 x3ajldb x1ja2u2z'])[1]")).click();
+		Thread.sleep(3000);
+	}
+	@Test
+	public void FseeMYProfile() {
+	   String element = driver.findElement(By.xpath("//div[@aria-label='See all profiles']")).getText();
+	   System.out.println(element);
+	   //assertTrue(true, element);
+	}
+	//assertTrue(element.isDisplayed());
+	//assertTrue(element.getText().startsWith("Welcome"));
+	
+		
+	
+		
+	
+
+}
+

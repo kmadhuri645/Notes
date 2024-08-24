@@ -1,0 +1,136 @@
+1. Roles & Responsibility as a Appium Tester
+============================================
+a. Performed mobile testing for Android devices.
+b. Hands-on experience in performing Appium Configuration
+   for Android Devices.
+c. Carried out automation for both real device 
+   as well as virtual device (Emulator).
+d. Hands-on experience in inspecting the mobile application 
+   elements using Appium Inspector/ Mobile browser elements
+   using chrome dev tool(chrome://inspect)
+e. Experienced in executing Gesture Actions using 
+   JavaScript snippets.
+f. Experienced in executing AndroidDriver methods.
+g. Performed adb commands.
+h. Performed Parallel Execution using different 
+   mobile devices on testNG.xml file. 
+i. Performed compatibility testing using BrowserStack.
+
+
+2. Challenges faced in Appium
+=============================
+
+a. Initially confugring Appium was challenging
+because we have to install many tools & configure them like
+ i.   Android Studio
+ ii.  Node JS
+ iii. Appium Server
+ iv.  UiAutomator2
+ v.  Appium Inspector
+ vi. JDK
+ Vii. IDE eclipse
+
+b. Handling SessionNotCreatedException was challenging
+  i.   Have to check we are able to connect to the server through CMD & through program or not
+  ii.  Sometimes while automating mobile browser we might get this exception bcz of browser executable file mismatch
+       in that case we have to use a command "appium --allow-insecure chromedriver_autodownload" to handle the exception.
+  iii. Sometimes we might get this exception due to hidden_api_policy in that case we have to use some capabilities like
+       "ignoreHiddenApiPolicy" & "autoGrantPermission" and make both of them true.
+  iv.  Sometimes we get this exception due to Socket hang up, for this we have to restart our Mobile device.
+
+c. Handling Gestures after upgrading to newer Appium version was challenging bcz previously we were using 
+   TouchAction class for handling Mobile Gestures but now in newer Appium version this class is depricated 
+   so to handle it we have to use Javascriptexcuter.
+
+d. Performing Scrolling gestures using JavaScriptExecutor is challenging bcz it is not scrolling based on the element
+   so to handle that we have used "new UiScrollable(new UiSelector()).scrollIntoView(text(\"value\"));"
+
+e. In Appium POM Class @AndroidFindBy & AppiumFieldDecorator class for locating the element was not working now
+   so we have handled it by using normal @FindBy annotations.
+
+3. Explain 10 test cases from ur previous project.
+4. What all testing u will do before signing off the testing?
+====================================================================================================================
+a. all mobile device testing
+b. and black box testing
+
+5. How u will install the app in ur Device.
+=====================================================================================================================
+3 ways
+a. adb install in cmd
+b. desiredCapabilities
+c. driver methods
+
+6. Java program aabbbcaddccc --> a2b3c1a1d2c3
+7. I want to distribute 50 ts & run in 2 different devices. how will u do it?
+==============================================================================================
+parallel execution by giving thread count = 2
+
+8. Have u worked on iOS?
+9. New command timeout in Appium.
+10. What is Appium inspector?
+11. Is appPackage & appActivity is necessery to launch an Application?
+12. Explain architecture of Appium & where do we use npm?
+===================================================================================================================
+==> npm-Node package manger used to install Appium server and provides environment to Appium server bc it is build or written in nods JS language.
+
+13. Write a Java program for input ==>(Bat, Batter, Batsman) output ==> Bat
+14. What Is Mobile Application Testing And How Is It Different From Mobile Testing?
+15. Difference between simulator & emulator.
+16. What kind of Bugs found during Mobile Testing?
+17. Cons of Appium?
+18. What Would You Prefer To Test Your Application On – Real Devices Or Use Simulators/Emulators?
+19. What Are The Probable Errors You Might Come Across While Working With Appium?
+Ans. The following are the errors you might observe with Appium.
+
+     Error#1: Missing desired capabilities e.g. Device Name, PlatformName.
+     Error#2: Couldn’t locate ADB. You may have missed setting the <ANDROID_HOME> environment variable.
+     Error#3: Selenium exception <openqa.selenium.SessionNotCreatedException>. It indicates a failure in creating a new  session.
+     Error#4: Failure in locating a DOM element or determining the XPath.
+
+20. List OneThing Which You Cannot Do With Emulators But You Can Do With A Real Device.
+Ans. You can test the interrupts like
+
+    Phone calls & Messages
+    Battery drains out while using the application under test
+    Low battery scenarios
+    Memory card mount/unmount scenarios
+    Actual performance of your application 
+    Bluetooth related testing.
+
+21. Driver methods for call & sending Message
+    driver.sendSMS(“555-555-5555”, “Your message here!”);
+    driver.makeGsmCall(“1234567890”, GsmCallActions.CALL);
+    driver.makeGsmCall(“1234567890”, GsmCallActions.ACCEPT);
+    driver.makeGsmCall(“1234567890”, GsmCallActions.CANCEL);
+
+    a. Call – “adb shell am start -a android.intent.action.CALL -d tel:+19085552244”
+
+    b. Text – “adb shell am start -a android.intent.action.SENDTO -d sms:+19085552244 --es sms_body "Test" --ez exit_on_sent false”
+
+22. In which form you get the build for Android and iOS platforms? 
+
+23. How to perform network testing through Automation?
+Ans. DesiredCapabilities capabilities = new DesiredCapabilities();
+     HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
+     browserstackOptions.put("networkProfile", "no-network");
+
+     airplane-mode, 2g-gprs-good, 2g-gprs-lossy, edge-good, edge-lossy, 3g-umts-good, 3g-	umts-lossy, 3.5g-hspa-good,
+     3.5g-hspa-lossy, 3.5g-hspa-plus-good, 3.5g-hspa-plus-lossy, 4g-lte-good, 4g-lte-q	high-latency, 4g-lte-lossy
+     4g-lte-advanced-good, 4g-lte-advanced-lossy, reset
+
+
+24. How to change battery level adb?
+Ans. a. “adb shell dumpsys battery” will provide a read-out of all battery related information.
+     b. “adb shell dumpsys battery set level 5” will set the battery level to 5. Very useful for low battery testing on Android. 
+        However, since the device is still connected to your PC, we need to make it seem like it is not charging, so use the 
+        following in conjunction:
+     c. “adb shell dumpsys battery unplug” makes the device appear as unplugged.
+     d. When you are all done with your testing, use the following to reset all battery configs: “adb shell dumpsys battery reset”.
+     e. There are other commands such as “adb shell dumpsys battery set status 3”, for instance, which fakes battery discharge etc.
+
+25. What is signed apk?
+Ans. Application signing ensures that one application cannot access any other application except through well-defined IPC(intel process communication).
+
+26. How do you identify that it is a hybrid application?
+

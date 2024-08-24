@@ -1,0 +1,143 @@
+1..What is your approach as a test engineer when a defect is found in the production?
+
+First i will try to understand the bug,and reproduce bug in our enviroment.
+than we understand the severity of the bug.
+then we will see the business impact of the bug.
+then we have a collaborative root cause analysis(RCA).
+based on RCA result we will fixed the bug,and perform the testing and deployee the biuld again.
+Now we will automate these bugs to stop similar bugs again.
+
+2..Why do we find defects in production?
+
+there are multiple reason to get the build 
+1.we do not have sufficent time to test the build .
+2.lack of test strategy
+3.lack of testing skill in test team.
+4.lack of ownership in the agile team.
+5.lack of testing infrastructure.
+6.misunderstanding of requirement.
+7.rtm not prepare
+8.proper ci/cd not happened
+9.client might done adhoch testing and found the defect.
+
+3..How to avoid defects in the production?
+
+1.first understand the requirement thoroughly.
+2.open communication b/w dev,testers,and other stackholder.
+3.thorough code review.
+4.utilize unit,e2e and exploratory testing.
+5.integrate the automated test suite with your ci/cd pipe line.
+6.follow test metrix.
+
+4..What is pre production environment?
+
+it is enviroment which is similar to production enviroment.it is also called as staging env.
+it simulates realtime data.it is used to perform final tsting before releasing to production.
+it is as close as possible in terms of hardware software configuration and data.
+
+5.. Tell some critical flow of your project?
+
+when any device receive in inbound invantory then inbound person will add those device in the system, during this process the device will get added in the data base and a device id will get generated randomly.  
+===================================================================================================
+6..what are the problems faced during your project and how did you overcome them?
+
+a) There were several problems I faced and I overcome them with clear communication with the lead.
+When I joined the team, I had issue with the understanding the project then my lead helped in that. 
+b) when we had the API development in plan and immediately one of our QA resource left that time I learn't Rest-assured and worked hard to mitigate the resource challenges. Which was really appriciated by everyone in my team.
+c) sometime we faced the issue in story acceptance criteria, specially from testing point of view. To overcome we had a detail discussion about the story acceptance criteria.
+	Ex- In one of the story the acceptance criteria was all regression must pass. To handle this only we had discussion and updated the acceptance as required/affected area regression must pass.(which was logical).
+
+
+7..What is your approach while writing the test Script.
+
+1. Before sprint, we will collect  tc from manual team
+2. Walkthrough manual TC and get clarification.
+3. Segregate automatable and non-automatable tc
+4. Effort and Estimation on the basis of --
+    a. Number of steps in TC
+    b. Complexity of the app'n
+c. Re-usability of the tc 
+5. we will  get an approval from the stakeholder.
+6.than we will start writing the test script.
+7.before write the ts we will developed pom pages, we will build some reusable function and we will create test data.
+and with the help of these components will will write our test script.
+
+8..if given 25 test cases how will you estimate the time.
+
+1.first i will understand the tc and thire Complexity.
+2.we will check the f/w has the required support or not.
+3.than we will see the tc steps.
+4.and also check how stable the tc.
+
+resources 
+experiances 
+dependency b/w to application
+complexity
+
+dsm-jaGAN
+2.and also check the data flow b/w the testcase.
+3.and also we have check depandincg b/w the tc.
+4.than based on that we will decide our story point.
+
+9.HOW DO YOU COME TO KNOW THE SCRIPT ARE AUTOMATABLE OR NOT.
+
+1.once the manual testcases are ready which we got from manual team. we will execute all those testcases to understand the proper flow of that application.than we will get to know which Tc are automatable and which tc are not automatable.
+
+Explorating ,adhoc usability tsting will not happen At 
+if it is cosmatic than do not go for at
+
+10.HOW DO YOU PRIORITIZE THE TESTCASES.
+1 first we will undersatnd the requirement.
+2.we will understand the importance of the test case.
+3.than we will discuss with the product manager or developers or lead to understand the 
+uses of  thease testcase.
+
+1.based on uses of the app
+2.how frequenlty feature is going to used based on the usees.
+3.based on business impact
+2. i will understand the Complexity of the test case.based on the complexity we will decide 
+wither it is critcal,major ,minor.so based on the importance of the tc case will will prepare one document of the testcase.
+==================================================3333================================================
+11. Approach to rerun your script if it is failed.
+
+when TS is failed than ,we will go for retry analysers.and also we have failed tc folder directly
+we can execute only failed tc.
+
+
+
+12. Can you tell your role in sprint?
+
+
+3. How will you handle git conflict?
+
+4. Can you tell me the first challenge that u faced in your project and how did you solve it?
+
+==pr raising we face issue
+===understanding the F/w
+==uderstand the exception .
+===understanding the flow to the aplication
+====in starting i was not able to understand the requirement .and could not come up with manual secnarios.for that we have done brainstroming season.
+
+5. While automating, Why am I unable to click on the element and What are the possible
+reasons for that and how will you resolve it?
+===GUI CHANGES
+shadow elements
+alert appear
+element may be disable
+out of view port area
+present in a frame
+ 
+ How to avoid
+by using javascript method will we avoid the issue.
+Action/accept()--in alert/we can also scroll down.
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+Commands:-
+
+get the list of databases:-
+----------------------------
+show databases;
+
+
+create the database:-
+----------------------
+crate database DB_NAME;
+
+use the database:-
+-------------------
+use DB_NAME;
+
+see the tables in current database:-
+-------------------------------------
+show tables;
+
+create tables in database:-
+---------------------------
+create table sdet(empId int(4) unique not null, empName varchar(30) not null, phoneNumber numeric(10) unique, emailID varchar(40), address varchar(50));
+
+get the description of table:-
+------------------------------
+desc TABLE_NAME;
+
+insert the data into tables:-
+-----------------------------
+way1-->
+insert into sdeuset values(1000, "Pankaj", 234561145, "pankaj@gmail.com", "Bangalore");
+
+way2-->
+insert into sdet(empName, empId, phoneNumber) values("Dinesh",1001, 234561675);
+
+
+fetch all the data from tables:-
+--------------------------------
+select * from sdet;
+
+update the values/data in tables:-
+---------------------------------
+update TABLE_NAME set COLUMN_NAME="Bangalore" where empId=1001;
+
+To make Temporary action to permanent Action:-
+-----------------------------------------------
+commit;
+
+delete the rows in tables:-
+---------------------------
+ delete from sdet where empId=1003;
+
+delete all the rows in tables:-
+-------------------------------
+ truncate table TABLE_NAME;
+
+delete the table from database:-
+--------------------------------
+ drop table TABLE_NAME;
+ drop table TABLE_NAME purge;
+
+ delete the database:-
+-------------------------
+drop database DATABASE_NAME;

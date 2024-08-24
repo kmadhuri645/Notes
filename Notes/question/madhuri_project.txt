@@ -1,0 +1,39 @@
+I have worked on F1smart services, It is a CRM Project.
+It is widely used in company and service center as well.
+whenever any product comes for fixing it gets added into product catalog, later it will be moved appropriate category.
+Once it is moved to appropriate categaory it will be moved to appropriate location in the portal as well as physical.
+suppose once it has been received to an office then it will be identified by a selection team where they will label it according to the problem discription like it needs a saperate parts, only fix etc..
+This project is about the device info, it's state and stage managemane, locating the device, status and owner of the device invoice generattion, customer history like many features was integrated in this project.
+
+what was your role in this project:-
+When I joined the project was already started. some old tool were already in place, but when I joined back in 2018 this project was in initial state.
+whole objective of this project was to migrate the old system to new system.
+we were working in agile model. after few sprint I was able to contribute to the project.
+I used to take part in sprint planning, daily scrum,review and retrospection.
+I have to understand the story requirements, clarify with the PO if any confusion.
+prepare the test cases and get it reviewd by the team as well as PO/Lead.
+upgrade the build received by developer to my tomcat server and test the stories and execute test cases.
+share the result in jira(xray or other tools).
+Raise the defect if it deviates from the requirements ad folow it till closure.
+In last days or initail days of the sprint perform regression tests and exploratory tests around my stories or features.
+I have worked on several modules like, login module, CMP module(how device gets assign and release by the CMP team), some part of customer service mode also.
+
+high priority and high severity : -
+Not able to add any new kind of categaory of the product,
+After assigning the device from inbound to Departments, it goes missing and it is no where tracebale in the portal,(some times)
+
+High Priority and low severity :-
+Device name was not able to display complete name in the details section, although we were able to identify by observing 20 character.
+Incorrect Login Attempt Counter was not properly configured
+
+Low priority and low severity :-
+Some typing/display error like pasword instead of password.
+In login page the alingment of username and password field is not consistent across browser.
+
+Low priority and high severity : -
+New password was not getting updated immediately, after changing the password. It takes 2-5 min to update the password and user is alomost block for 5 min.
+
+when ever we create a account for service engg .after creating the account.the  notification meassge is visible wrong.it gives message like qa account has be created. 
+
+
+challenges we were facing in automation testing:-

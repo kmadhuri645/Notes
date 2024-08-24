@@ -1,0 +1,13 @@
+1. TL create a project and push it inot github
+2. TE login to his account and search for the TL repository and select the repository which 
+ he wants to work with and he will fork that repository so that repository will be visible/ present in his repository
+3.Go inside the repository> click on code> copty the url
+4. open eclipse> file> import> git>clone url> paste the url> ok>ok>finish
+5. the project will be appear in the eclipse(in TE system) do the necessary changes and save the file
+6. roght click on project> team> commit> move from unstaged to staged are add a commit message > 
+click on commit and push> enter UN and TE token> ok> it will be pushed to github> in github TE 
+should be in a position to seeee the changes which he have committed.
+7.TE----open repository> click on contribute> click on contribute> open merge request>
+8. TE---- Enter the proper message> create pull request>
+9. TL--- open the repository> click on pull request> if there is comment comment there in text area or else click on merge pull request
+10.TE-- if any comment is there from TL he will answer back

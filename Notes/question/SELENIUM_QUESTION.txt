@@ -1,0 +1,189 @@
+====================================
+SELENIUM TESTING INTERVIEW QUESTIONS
+====================================
+
+How do you prepare Regression Suite (not Suite.xml file)❌
+Explain test automation plan
+Explain how you write test script
+Fluent wait
+Explain ci/cd tool
+How to fetch the data from Excel 
+What is POM and page factory
+How you will store the Data 
+how you will execute Regression testSuites 
+Instead of Pom can we use different design pattern? ❌
+If programming language is different for particular page in front end. How we use object repository? can we use same pom? or we go for alternative? ❌
+How u generate report in your framework? What u used to generate? (Extent Report)
+Git interaction
+Jenkins configuration
+How will you automate OTP
+Can you take screen shot in headless scripts (jenkins)❌
+Types of waits
+Types of explicit wait
+Open browser incognito mode and run test script
+In Website 100 images are there fetch only broken images
+Go to Amazon, scroll down, in "Make Money with Us" list "Amazon Pay on Merchants" link is there if developer changes and add any links inbetween “Amazon Pay on Merchants”, write dynamic xpath to find “Amazon Pay on Merchants” link. ❌
+How you run same test cases in different browser without suite file ❌
+How do you show you jar files with your friends❌
+There is three tab and how will you close 3rd TAB
+There three windows and you have closed with driver.close(), how will you switch to next window ❌
+Which file you have used to read data ❌
+How you created your pom classes
+Diff btw New selenium version and old version
+java version, selenium version
+how you do cross-browser testing
+dependencies- in your project
+exceptions and root cause
+When you get manual test cases, what is your approach to develop automation script?
+You have developed some automation scripts, customer gives new requirement, it will affect your old scripts as well. What is your approach? ❌
+selenium annotations
+how u open the url without get method.
+for what purpose we go for css selector
+initially we locate webelement with name attribute,but dev changed to gender ,then which exception will u get after running the script ,how do u handle it.
+When do you perform pull operation?
+ITestListener,retryAnalayer how u implemented in testscript
+Why you are declaring elements private in POM class?
+Write Xpath for MakeMyTrip  checkbox for flight name indigo?Explain how it is dynamic..
+Write Xpath for Departure time for Before 6Am flight?
+How webdriver manager works
+Challenges in automation you faced
+Return type of web element data.
+Tell me Generic functions you have contributed.
+What is customized exception
+how code changes effect your script.
+how will you handled alert pop up if the pop up is sometimes appears sometimes may not. ur approach
+how you will do parallel testing.
+how many threads you are going to run your scripts in parallel
+as you are initializing one webdriver reference but youn are going to operate that on multiple threads while parallel testing, then what are all the issues you faced in your project and how you resolved.
+How do you debug the web application if anything is not working.
+Script to automate 
+The 2 frames is present in the webpage Checkbox is present in the webpage . If checkbox is selected  "My name is Mr.X" should be displayed in frame 2 If checkbox is not selected then the text should be disappeared in frame2
+If I initialization variables inside base at before class abstract used those variables in two different classes inside @Test Annotations with printing statements What will be the output?
+What is selenium grid ? How will u setup and why it's needed?
+what challenges u faced in writing xpath, and how u over come from that
+If i set implicit wait to 10 minutes and explicit wait to 5 minutes for an  element how much time  will it wait for that element to be clickable
+How to schedule job in order to execute test script on every saturday at 8am in jenkins
+There is an element in page which is only visible when you hover the mouse over it and suppose you're not allowed to  use mouseover action how will you hover over it and click that element.
+There is a checkbox and you're not allowed to use action ,how will you check the checkbox
+How often you executed builds in jenkins and what was the reason if testscripts failed and what was your approach if testscripts are failing
+write code to select a value in a dropdown....which is not a select tag dropdown.
+There is an element in page which is only visible when you hover the mouse over it and suppose you're not allowed to  use mouseover action how will you hover over it and click that element.
+if any testscript got failed how you are going to identify and resolve the issue.
+how you will skip particular testcase in execution.
+   you have 5 methods...but i want to execute in the order of 4th, 5th, 1st and 2nd..but i dint want to execute 3rd one.
+if you get ElementNotInteractableException how you will solve it ?
+what you will do after getting TestCase.
+open makemytrip app, tell me what n all the technologies (stack) is been used
+how you are going to maintain different versions of Application.
+By using map of map concept to devlop a script and store the web table data like key and value pair
+2.Same table we have to make use of scanner class during running time if you give the value it will return the value 
+3.One website is there how you find what are the technologies make use of develop the application.
+Xpath: amazon.in scroll to Today's deal and identify the bag image.   (traverse it from Today's deal to the particular image).
+While automating, Why am I unable to click on the element and What are the possible reasons for that and how will you resolve it?
+when do you get nosuchelementexception.
+you have 100 tc you want to run that test script parallely in the same browser after executing one set.
+how will you run the smoke & regression in Jenkins 
+what is the maven command for that(for the above question)
+How you will handled the file download popup
+How you will handled the scrollbar and can you tell me the syntax for that
+How will you perform the smoke testing through jenkins
+If you are having multiple xml file i want to execute one xml file what is your approach
+there is a dropdown in that you have to select 5th elemet every time but the element is dynamic(it changes everytime) so how will you select that element.
+generic method for mouseHover Action
+if u pass driver.get("www.google.com") it will work ? wt exception u will get
+How will you handle gitconflict
+how to delete the cookies
+open any website and identify the cookies in the website
+Asked me to write some sample testng methods like m1, m2,m3,m4,m5 (from they asked the following questions)
+	a. How will you execute only 4th test method
+	b. Give the priority from (1 to 5) in reverse order and asked me the order of execution and again keep
+	   on changing the order and asked me the order of execution
+	c. from the above methods i want to execute the 4th method 10 times what will you do?
+	d. Like above method I have 100 methods I want to execute only 10 methods will you pass (enable=false) parameter to all remaining methods
+what are the different execution available in testNG asked me explain each testNG.xml file orally
+How will you execute the different testNG.xml file at a time
+There are 10 testcase, and i want to execute only 5 cases, what are the possible ways to do.
+WebDriver driver=new ChromeDriver();
+	a. what is driver here
+	b. what is chromeDriver()
+	c. what is webdriver
+	d. what is new here
+if we want to switch from master branch to current branch which git command will you use
+
+What is Selenium?
+Explain the differences between Selenium IDE, Selenium RC, and Selenium WebDriver.
+What is the difference between findElement() and findElements() in Selenium?
+Explain the difference between implicit wait and explicit wait in Selenium.
+How to handle multiple windows in Selenium WebDriver?
+What are the advantages of using Selenium for test automation?
+How does Selenium interact with different browsers?
+Explain the difference between a relative XPath and an absolute XPath.
+What is the purpose of the Actions class in Selenium?
+How do you handle dropdowns in Selenium?
+What is the purpose of the WebDriverWait class in Selenium?
+How can you capture screenshots in Selenium WebDriver?
+Explain the difference between close() and quit() methods in WebDriver.
+How to handle alerts in Selenium?
+What is a WebElement in Selenium?
+How to perform keyboard actions using Selenium WebDriver?
+How do you perform drag-and-drop actions in Selenium?
+How to perform file uploads in Selenium?
+Explain the difference between driver.get() and driver.navigate().to() in Selenium.
+How do you handle synchronization issues in Selenium?
+How can you handle frames in Selenium?
+What is the significance of the getAttribute() method in Selenium?
+What is the purpose of the isDisplayed() method in Selenium?
+How to handle browser navigation in Selenium WebDriver?
+How do you simulate pressing the Enter key using Selenium WebDriver?
+How to perform double-click actions in Selenium?
+What is the purpose of the Actions class in Selenium WebDriver?
+How to capture network traffic in Selenium WebDriver?
+Explain the concept of the TestNG XML suite file.
+How do you handle dynamic tables in Selenium?
+What is the purpose of the Robot class in Selenium WebDriver?
+How to switch between frames in Selenium WebDriver?
+Explain the difference between driver.getTitle() and driver.getCurrentUrl() in Selenium.
+How can you simulate browser back and forward actions in Selenium?
+How to handle pop-up windows in Selenium WebDriver?
+Explain the difference between XPath and CSS selectors in Selenium.
+What is the purpose of the findElement() method in Selenium WebDriver?
+How to perform right-click actions in Selenium WebDriver?
+What is the purpose of the isEnabled() method in Selenium?
+How to handle JavaScript alerts in Selenium WebDriver?
+Explain the difference between close() and quit() methods in Selenium WebDriver.
+How to perform browser navigation in Selenium using navigation commands?
+What is the purpose of the getOptions() method in handling dropdowns?
+How to handle SSL certificate issues in Selenium WebDriver?
+How to perform mouse hover actions in Selenium?
+How to perform keyboard shortcuts in Selenium WebDriver?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
